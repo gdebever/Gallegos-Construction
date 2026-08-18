@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Art Gallegos Construction</title>
+<meta name="description" content="Request a free estimate for roofing, painting, or home repair from Art Gallegos Construction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER (identical on every page) ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">AG</span>
+      <span class="brand-text">
+        <span class="brand-name">Art Gallegos</span>
+        <span class="brand-sub">Construction</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a class="btn btn--primary nav-cta" href="contact.html">Free Estimate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="hero hero--page" id="pagehero">
+    <style>#pagehero::before{background-image:url('Interior%20repair%20by%20gallegos%20002.jpg')}</style>
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Tell us what's going on</h1>
+      <p>Fill out the form, or just call. Either way you'll talk to Art, not a call center.</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split" style="align-items:start">
+      <div>
+        <h2>Request a free estimate</h2>
+        <p class="mt-1">The more detail you give us, the more useful our first answer will be. Photos help a lot &mdash; you can email them after you submit.</p>
+
+        <!-- Netlify handles this form automatically. Submissions appear in your
+             Netlify dashboard under Forms. No server or plugin required. -->
+        <form name="estimate" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="form-grid mt-2">
+          <input type="hidden" name="form-name" value="estimate">
+          <p class="hp"><label>Leave this field empty: <input name="bot-field"></label></p>
+
+          <div class="form-row-2">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="service">What do you need?</label>
+              <select id="service" name="service" required>
+                <option value="">Choose one&hellip;</option>
+                <option>Roofing</option>
+                <option>Interior painting</option>
+                <option>Exterior painting</option>
+                <option>Home repair</option>
+                <option>Storm / insurance claim</option>
+                <option>Not sure &mdash; need an opinion</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="address">Property address</label>
+            <input id="address" name="address" type="text" autocomplete="street-address">
+            <p class="field-hint">So we know where we're headed for the estimate.</p>
+          </div>
+
+          <div class="field">
+            <label for="message">Tell us about the project</label>
+            <textarea id="message" name="message" required placeholder="What's happening, how long it's been going on, and anything you've already tried."></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn--primary">Send Request</button>
+            <p class="field-hint mt-1">We reply the same day whenever we can, Monday through Saturday.</p>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-panel">
+        <h3>Reach us directly</h3>
+        <!-- TODO: replace all placeholder contact details below -->
+        <dl class="contact-list">
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+15550000000">(555) 000-0000</a></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:info@artgallegosconstruction.com">info@artgallegosconstruction.com</a></dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Monday&ndash;Saturday, 7:00am&ndash;6:00pm<br>Sunday &mdash; emergencies only</dd>
+          </div>
+          <div>
+            <dt>Service Area</dt>
+            <dd><em>Add cities and surrounding communities served.</em></dd>
+          </div>
+          <div>
+            <dt>License</dt>
+            <dd><em>Add license number</em> &middot; Licensed &amp; insured</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER (identical on every page) ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">AG</span>
+          <span class="brand-text">
+            <span class="brand-name">Art Gallegos</span>
+            <span class="brand-sub">Construction</span>
+          </span>
+        </a>
+        <p style="margin-top:1rem">Roofing, painting, and residential repair done by the owner, on site, start to finish.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#roofing">Roofing</a></li>
+          <li><a href="services.html#painting">Painting</a></li>
+          <li><a href="services.html#repair">Home Repair</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <!-- TODO: replace with Art's real contact details -->
+          <li><a href="tel:+15550000000">(555) 000-0000</a></li>
+          <li><a href="mailto:info@artgallegosconstruction.com">info@artgallegosconstruction.com</a></li>
+          <li>Mon&ndash;Sat, 7am&ndash;6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Art Gallegos Construction. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

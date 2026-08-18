@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Art Gallegos Construction</title>
+<meta name="description" content="Photos of completed roofing, painting, and home repair projects by Art Gallegos Construction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER (identical on every page) ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">AG</span>
+      <span class="brand-text">
+        <span class="brand-name">Art Gallegos</span>
+        <span class="brand-sub">Construction</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a class="btn btn--primary nav-cta" href="contact.html">Free Estimate</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="hero hero--page" id="pagehero">
+    <style>#pagehero::before{background-image:url('Premium%20roof%2003.jpg')}</style>
+    <div class="container">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Our work, up close</h1>
+      <p>Every photo here is a real job. Use the filters to see roofing, painting, or repair work.</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Portfolio</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters" role="group" aria-label="Filter projects by category">
+        <button class="filter is-active" data-filter="all" aria-pressed="true">All Projects</button>
+        <button class="filter" data-filter="roofing" aria-pressed="false">Roofing</button>
+        <button class="filter" data-filter="painting" aria-pressed="false">Painting</button>
+        <button class="filter" data-filter="repair" aria-pressed="false">Home Repair</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="tile" data-category="roofing">
+          <img src="Art%20G%20Premium%20Roof%2001.jpg" alt="Premium Roof Installation by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Premium Roof Installation</strong><span>Complete tear-off and replacement</span></figcaption>
+        </figure>
+        <figure class="tile" data-category="roofing">
+          <img src="Premium%20roof%2002.jpg" alt="Roof Replacement by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Roof Replacement</strong><span>New underlayment and shingles</span></figcaption>
+        </figure>
+        <figure class="tile" data-category="roofing">
+          <img src="Premium%20roof%2003.jpg" alt="Residential Roofing by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Residential Roofing</strong><span>Full system installation</span></figcaption>
+        </figure>
+        <figure class="tile" data-category="roofing">
+          <img src="Premium%20roof%2004.jpg" alt="Premium Roof Finish by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Premium Roof Finish</strong><span>Detail and flashing work</span></figcaption>
+        </figure>
+        <figure class="tile" data-category="painting">
+          <img src="Interior%20expert%20painter%2002.jpg" alt="Interior Painting by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Interior Painting</strong><span>Full prep, prime, and finish coats</span></figcaption>
+        </figure>
+        <figure class="tile" data-category="painting">
+          <img src="Home%20paint%20exterior%2001.jpg" alt="Exterior Repaint by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Exterior Repaint</strong><span>Scrape, prime, and two-coat finish</span></figcaption>
+        </figure>
+        <figure class="tile" data-category="repair">
+          <img src="Interior%20repair%20by%20gallegos.jpg" alt="Interior Restoration by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Interior Restoration</strong><span>Drywall and trim repair</span></figcaption>
+        </figure>
+        <figure class="tile" data-category="repair">
+          <img src="Interior%20repair%20by%20gallegos%20002.jpg" alt="Interior Repair by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Interior Repair</strong><span>Surface repair and refinishing</span></figcaption>
+        </figure>
+        <figure class="tile" data-category="repair">
+          <img src="Gallegos%20kitchen%20repair.jpg" alt="Kitchen Repair by Art Gallegos Construction" loading="lazy">
+          <figcaption><strong>Kitchen Repair</strong><span>Cabinetry and finish work</span></figcaption>
+        </figure>
+      </div>
+
+      <!-- TODO: As Art sends new job photos, add them to the repo and copy one
+           <figure class="tile"> block above, changing the src, alt, caption,
+           and data-category ("roofing", "painting", or "repair"). -->
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="section cta-band">
+    <div class="container">
+      <h2>Want something like this at your place?</h2>
+      <p>Send us a photo of what you're dealing with and we'll tell you what it takes.</p>
+      <div class="btn-row center">
+        <a class="btn btn--primary" href="contact.html">Request a Free Estimate</a>
+        <!-- TODO: replace with Art's real phone number -->
+        <a class="btn btn--outline-light" href="tel:+15550000000">Call (555) 000-0000</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER (identical on every page) ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">AG</span>
+          <span class="brand-text">
+            <span class="brand-name">Art Gallegos</span>
+            <span class="brand-sub">Construction</span>
+          </span>
+        </a>
+        <p style="margin-top:1rem">Roofing, painting, and residential repair done by the owner, on site, start to finish.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#roofing">Roofing</a></li>
+          <li><a href="services.html#painting">Painting</a></li>
+          <li><a href="services.html#repair">Home Repair</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <!-- TODO: replace with Art's real contact details -->
+          <li><a href="tel:+15550000000">(555) 000-0000</a></li>
+          <li><a href="mailto:info@artgallegosconstruction.com">info@artgallegosconstruction.com</a></li>
+          <li>Mon&ndash;Sat, 7am&ndash;6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Art Gallegos Construction. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
