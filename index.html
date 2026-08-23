@@ -7,7 +7,7 @@
 <meta name="description" content="Art Gallegos Construction provides expert roofing, interior and exterior painting, and residential repair services. Craftsmanship you can see. Free estimates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,8 +39,8 @@
 <main id="main">
 
   <!-- ============ HERO ============ -->
-  <section class="hero hero--home" style="--x:0">
-    <style>.hero--home::before{background-image:url('Art%20G%20Premium%20Roof%2001.jpg')}</style>
+  <section class="hero" style="background-image:none">
+    <style>.hero::before{background-image:url('Art%20G%20Premium%20Roof%2001.jpg')}</style>
     <div class="container">
       <p class="eyebrow">Roofing &middot; Painting &middot; Home Repair</p>
       <h1>Built right the first time.</h1>
@@ -127,8 +127,22 @@
     </div>
   </section>
 
-  <!-- ============ FEATURED WORK ============ -->
+  <!-- ============ FEATURED OFFER (single clay card, per design system rule) ============ -->
   <section class="section section--alt">
+    <div class="container">
+      <div class="featured-card">
+        <p class="eyebrow" style="color:rgba(255,255,255,.85)">Limited-Time</p>
+        <h3>Free roof inspection with any estimate.</h3>
+        <p>Book a free estimate on any project this season and Art will walk your roofline at no charge &mdash; flagging anything worth knowing about before it becomes a bigger repair.</p>
+        <div class="btn-row">
+          <a class="btn btn--outline-light" href="contact.html">Claim Your Free Estimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED WORK ============ -->
+  <section class="section">
     <div class="container">
       <div class="section-head center">
         <p class="eyebrow">Recent Projects</p>
@@ -152,31 +166,31 @@
 
   <!-- ============ TESTIMONIAL SLICE ============ -->
   <!-- TODO: Replace these with real reviews from Art's customers before launch. -->
-  <section class="section">
+  <section class="section section--dark">
     <div class="container">
       <div class="section-head center">
         <p class="eyebrow">What Clients Say</p>
         <h2>Neighbors who'd hire us again</h2>
       </div>
       <div class="grid grid-3">
-        <figure class="quote">
+        <figure class="quote" style="border-color:rgba(255,255,255,.18)">
           <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>&ldquo;Art replaced our roof after a bad hailstorm and walked us through the whole insurance process. Crew was on time every morning and the yard was spotless when they left.&rdquo;</blockquote>
           <figcaption><strong>Sample Client</strong>Roof replacement</figcaption>
         </figure>
-        <figure class="quote">
+        <figure class="quote" style="border-color:rgba(255,255,255,.18)">
           <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>&ldquo;We had three quotes for exterior paint. Art's wasn't the cheapest, but he was the only one who explained the prep work. Two years later it still looks new.&rdquo;</blockquote>
           <figcaption><strong>Sample Client</strong>Exterior painting</figcaption>
         </figure>
-        <figure class="quote">
+        <figure class="quote" style="border-color:rgba(255,255,255,.18)">
           <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>&ldquo;Honest is the word. He told us we didn't need the bigger job we thought we needed, fixed the actual problem, and charged us a fraction of what we expected.&rdquo;</blockquote>
           <figcaption><strong>Sample Client</strong>Home repair</figcaption>
         </figure>
       </div>
       <div class="btn-row center">
-        <a class="btn btn--ghost" href="testimonials.html">Read more reviews</a>
+        <a class="btn btn--outline-light" href="testimonials.html">Read more reviews</a>
       </div>
     </div>
   </section>
@@ -187,7 +201,7 @@
       <h2>Ready for a straight answer on your project?</h2>
       <p>Tell us what's going on with your home. We'll come look, talk it through, and give you a written estimate &mdash; no pressure, no charge.</p>
       <div class="btn-row center">
-        <a class="btn btn--primary" href="contact.html">Request a Free Estimate</a>
+        <a class="btn btn--primary" style="background:var(--white);color:var(--ink)" href="contact.html">Request a Free Estimate</a>
         <!-- TODO: replace with Art's real phone number -->
         <a class="btn btn--outline-light" href="tel:+15550000000">Call (555) 000-0000</a>
       </div>
